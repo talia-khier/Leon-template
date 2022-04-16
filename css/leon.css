@@ -2,12 +2,17 @@
 :root {
   --main-color: #10cab7;
   --secondary-color: #2c4755;
+  --section-padding: 60px;
+  --section-bgcolor: #f6f6f6;
 }
 
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -203,9 +208,9 @@ header .links ul li a:hover {
 /* End Landing Section */
 /* Start Features Section */
 .features {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #f6f6f6;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-bgcolor);
 }
 
 .features .container {
@@ -235,8 +240,8 @@ header .links ul li a:hover {
 /* End Features Section */
 /* Start Servicess Section */
 .services {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .services .services-content {
@@ -302,3 +307,37 @@ header .links ul li a:hover {
 }
 
 /* End Services Section */
+/* Start Portfolio Section */
+.portfolio + p {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-bgcolor);
+}
+.portfolio .portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  grid-gap: 30px;
+  margin-top: 80px;
+}
+
+.portfolio .portfolio-content .card {
+  background-color: #fff;
+}
+
+.portfolio .portfolio-content img {
+  max-width: 100%;
+}
+
+.portfolio .portfolio-content.card .info {
+  padding: 20px;
+}
+.portfolio .portfolio-content.card .info h3 {
+  margin: 0;
+}
+
+.portfolio .portfolio-content.card .info h3 {
+  color: #777;
+  list-style: 1.6;
+}
+/* ENd Portfolio Section */
