@@ -330,14 +330,14 @@ header .links ul li a:hover {
   max-width: 100%;
 }
 
-.portfolio .portfolio-content.card .info {
+.portfolio .portfolio-content .card .info {
   padding: 20px;
 }
-.portfolio .portfolio-content.card .info h3 {
+.portfolio .portfolio-content .card .info h3 {
   margin: 0;
 }
 
-.portfolio .portfolio-content.card .info h3 {
+.portfolio .portfolio-content .card .info h3 {
   color: #777;
   list-style: 1.6;
 }
